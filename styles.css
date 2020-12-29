@@ -72,6 +72,10 @@ table {
 	font-family: 'Roboto', sans-serif;
 }
 
+p {
+	line-height: 3rem;
+}
+
 h1 {
 	font-size: var(--desktop-heading-font-size);
 	color: var(--main-font-color)
@@ -80,6 +84,10 @@ h1 {
 a {
 	color: var(--main-font-color);
 	padding: 2rem;
+}
+
+i {
+	font-size: 5rem;
 }
 
 .logo span {
@@ -97,10 +105,18 @@ header h2 {
 
 .intro h2 {
 	align-self: flex-start;
+	margin: 1rem;
 }
 
 .intro p {
-	line-height: 3rem;
+	margin: 1rem;
+}
+#bio h2 {
+	margin-bottom: 2%;
+}
+
+#bio h2 span {
+	border-bottom: 4px solid var(--secondary-main-color);
 }
 /*======== general selectors ========*/ 
 /* * div {
@@ -116,12 +132,24 @@ body {
 	margin: auto, 0;
 }
 
+section {
+	padding: 2% 5%;
+}
+
+button {
+	width: 100%;
+	border-radius: 25px;
+	line-height: 2rem;
+	margin: 1rem;
+	border: none;
+}
+
 /*======== class & id selectors ========*/ 
 .logo-nav-container{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 5rem;
+	margin-bottom: 10%;
 }
 .landing-content-container{
 	display: flex;
@@ -134,23 +162,71 @@ body {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	padding: 10rem 10rem;
-}
-
-.intro h2, p, button{
-	margin: 1rem;
+	padding-right: 15%;
 }
 
 .intro button {
-	width: 100%;
-	border: none;
 	background-color: var(--secondary-main-color);
-	border-radius: 25px;
-	line-height: 2rem;
-	margin: auto, 0;
 	color: var(--secondary-font-color)
 }
 
 .heading-svg-container {
 	padding-right: 10rem;
+}
+
+#bio {
+	height: 100vh;
+}
+
+.about-container {
+	display: flex;
+	justify-content: space-around;
+	height: 100%;
+}
+
+.personal-info {
+	background-color: var(--off-white-container-bg-color);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 5% 0 5%;
+	width: 30%;
+}
+
+.headshot {
+	background-image: url('assets/joshua-oluwagbemiga-8qFarlWZY-U-unsplash.jpg');
+	background-size: cover;
+	border-radius: 50%;
+	height: 20rem;
+	width: 20rem;
+	margin: 5%;
+}
+
+.svg-skills-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.skills {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	background-color: var(--off-white-container-bg-color);
+	height: 50%;
+
+}
+
+.skill-card {
+	border-radius: 5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	height: 25%;
+	width: 25%;
+	margin: 2%;
+	padding: 2%;
+	background-color: #C4C4C4;
 }
