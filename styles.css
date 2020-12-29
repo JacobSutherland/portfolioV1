@@ -93,6 +93,16 @@ a {
 	text-decoration: none;
 }
 
+nav a:hover {
+	border-bottom: 2px solid var(--secondary-main-color);
+	border-radius: 0;
+}
+
+footer a:hover {
+	border-bottom: 2px solid var(--secondary-main-color);
+	border-radius: 0;
+}
+
 .intro a {
 	background-color: var(--secondary-main-color);
 	color: var(--secondary-font-color)
@@ -152,8 +162,11 @@ header h2 {
 }
 
 .project-img-description p{
-	color: white;
-	background-color: rgba(143, 149, 154, 0.4);
+	color: var(--secondary-font-color);
+	background-color: rgba(255, 255, 255, 0.6);
+	font-weight: bold;
+	font-size: 1.2rem;
+	padding: 0 5%;
 }
 
 #blogs h2 {
@@ -250,8 +263,9 @@ section {
 }
 
 .headshot {
-	background-image: url('assets/joshua-oluwagbemiga-8qFarlWZY-U-unsplash.jpg');
+	background-image: url('assets/headshot.jpeg');
 	background-size: cover;
+	background-position: top;
 	border-radius: 50%;
 	height: 15vw;
 	width: 15vw;
@@ -332,10 +346,36 @@ section {
 }
 
 .project-img-description {
-	padding: 5%;
-	background-image: url('/assets/walkator-klMii3cR9iI-unsplash.jpg');
+	display: flex;
+	align-items: flex-end;
 	background-size: cover;
+	background-position: center;
 	height: 100%;
+	width: 100%;
+}
+
+.one {
+	background-image: url('/assets/pagination.jpeg');
+}
+
+.two {
+	background-image: url('/assets/interactiveForm.jpeg');
+}
+
+.three {
+	background-image: url('/assets/phraseHunter.jpeg');
+}
+
+.four {
+	background-image: url('/assets/staticRadio.jpeg');
+}
+
+.five {
+	background-image: url('/assets/sutherlandDev.jpeg');
+}
+
+.six {
+	background-image: url('/assets/sewn.jpeg');
 }
 
 #blogs {
