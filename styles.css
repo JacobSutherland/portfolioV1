@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 /*======== Resets ========*/ 
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -66,5 +68,89 @@ table {
 }
 
 /*======== font-stylels ========*/ 
+* p, h1, h2, a{
+	font-family: 'Roboto', sans-serif;
+}
 
+h1 {
+	font-size: var(--desktop-heading-font-size);
+	color: var(--main-font-color)
+}
+
+a {
+	color: var(--main-font-color);
+	padding: 2rem;
+}
+
+.logo span {
+	border-bottom: 4px solid var(--secondary-main-color);
+}
+
+header p {
+	color: var(--main-font-color)
+}
+
+header h2 {
+	font-size: var(--desktop-heading-font-size);
+	color: var(--main-font-color);
+}
+
+.intro h2 {
+	align-self: flex-start;
+}
+
+.intro p {
+	line-height: 3rem;
+}
 /*======== general selectors ========*/ 
+/* * div {
+	border: 2px solid red;
+} */
+header {
+	height: 100vh;
+	padding: 2% 5%;
+	background-color: var(--main-bg-color);
+}
+
+body {
+	margin: auto, 0;
+}
+
+/*======== class & id selectors ========*/ 
+.logo-nav-container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5rem;
+}
+.landing-content-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 10rem 10rem;
+}
+
+.intro h2, p, button{
+	margin: 1rem;
+}
+
+.intro button {
+	width: 100%;
+	border: none;
+	background-color: var(--secondary-main-color);
+	border-radius: 25px;
+	line-height: 2rem;
+	margin: auto, 0;
+	color: var(--secondary-font-color)
+}
+
+.heading-svg-container {
+	padding-right: 10rem;
+}
