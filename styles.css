@@ -199,6 +199,7 @@ header h2 {
 
 #blogs h2 {
 	margin-bottom: 2rem;
+	font-size: var(--desktop-h2-font-size);
 }
 
 #blogs h2 span {
@@ -474,6 +475,15 @@ footer {
 #blogs h2 {
 	font-size: var(--desktop-h2-font-size)
 }
+
+.heading-nav a{
+	border: 2px solid red;
+	width: initial;
+	border: none;
+	}
+
+/*======== font-styles ========*/
+
 	section{
 		margin-top: 5%;
 	}
@@ -494,7 +504,7 @@ footer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 100vw;
+	width: 90vw;
 	height: 100vh;
 	position: absolute;
 	bottom: 0;
@@ -516,7 +526,6 @@ footer {
 	}
 
 	.intro {
-		
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -573,6 +582,7 @@ footer {
 	}
 	
 	#projects {
+		padding-top: 5%;
 		height: auto;
 	}
 	
