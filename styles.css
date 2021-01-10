@@ -141,7 +141,7 @@ h1, h2 {
 }
 
 i {
-	font-size: 4rem;
+	font-size: 3rem;
 }
 
 .logo span {
@@ -172,6 +172,10 @@ header h2 {
 
 #bio h2 span {
 	border-bottom: 4px solid var(--secondary-main-color);
+}
+
+.skill-card p{
+	font-size: .7rem;
 }
 
 #projects h2 {
@@ -224,9 +228,12 @@ li {
 /*======== general selectors ========*/ 
 
 header {
+	display: flex;
+	flex-direction: column;
 	height: 100vh;
 	padding: 2% 5%;
 	background-color: var(--main-bg-color);
+	overflow: hidden;
 }
 
 body {
@@ -323,8 +330,10 @@ section {
 .svg-skills-container {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	width: 45%;
+	justify-content: center;
+	align-items: center;
+	width: 40%;
+	padding-bottom: 2%;
 }
 
 .skills {
@@ -333,8 +342,8 @@ section {
 	align-items: center;
 	flex-wrap: wrap;
 	background-color: var(--off-white-container-bg-color);
-	height: 50%;
-
+	width:75%;
+	height:100%;
 }
 
 .skill-card {
@@ -342,15 +351,15 @@ section {
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	height: 30%;
-	width: 23%;
+	height: 25%;
+	width: 20%;
 	margin: 2%;
-	padding: 2%;
+	padding: 3%;
 	background-color: #C4C4C4;
+	overflow: hidden;
 }
 
 #projects {
-	height: 100vh;
 	background-color: var(--main-bg-color);
 }
 
@@ -368,7 +377,7 @@ section {
 	justify-content: space-around;
 	align-items: center;
 	width: 28%;
-	height: 45%;
+	height: 20rem;
 	margin: 2%;
 	background-color: var(--off-blue-container-bg-color);
 }
@@ -409,6 +418,9 @@ section {
 
 .six {
 	background-image: url('/assets/sewn.jpeg');
+}
+.seven {
+	background-image: url('/assets/directory.jpeg');
 }
 
 #blogs {
